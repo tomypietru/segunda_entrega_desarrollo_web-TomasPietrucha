@@ -14,12 +14,15 @@
 
 header{
     background-color: rgb(10, 10, 10);
-    grid-area: header;
     position: sticky;
-    display: flex;
+    z-index: 10;
     top: 0;
     
     
+}
+.navbar-toggler-icon{
+    color: white;
+    border: rgb(92, 86, 8) solid 2px;
 }
 .text_blanco{
     color: white;
@@ -110,6 +113,27 @@ h3{
     height: auto;
     border-radius: 50px;
 }
+.img_car{
+    
+    margin-left: 30%;
+    height: auto;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+.img_car_vela{
+    margin-left: 35%;
+    height: auto;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+}
+.logo_nosotros{
+    border-radius: 30px;
+}
 .img1{
     text-align: center;
     
@@ -128,7 +152,7 @@ h3{
     padding: 10px;
     opacity: 1;
 }
-img:hover{
+.img3:hover{
     border: white solid;
     
 }
@@ -198,6 +222,7 @@ nav{
     .header_logo{
         margin-left: 25%;
     }
+
 }
 
 
@@ -237,6 +262,25 @@ nav{
     }
     .header_logo{
         margin-left: 0%;
+    }
+    
+    .img_car{
+    
+        margin-left: 0%;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        padding: 10px;
+        
+    }
+    .img_car_vela{
+        margin-left: 0%;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        padding: 10px;
     }
 }
 

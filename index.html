@@ -28,11 +28,34 @@
     </header>
     
     <main class="main">
-        <h1>
+        <h1 class="display-4 text-white text-center fw-bold bg-dark shadow p-3 mb-5 rounded">
             PerfumAromas
         </h1>
-        <img src="" alt="carrucel_imagen_muestra">
-        <h1>
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/perfume1.jpg" class="d-block  img_car" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/perfume3.jpg" class="d-block  img_car" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/vela1.jpg" class="d-block  img_car_vela" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/vela3.jpg" class="d-block  img_car_vela" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <h1 class="display-9 text-white text-center fw-bold bg-dark shadow p-3 mb-5 rounded">
             Nuestros Productos
         </h1>
         <h2>
@@ -42,7 +65,8 @@
         <p style="color: white;">
             text Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis officiis quisquam vel incidunt, laborum impedit earum. Eos repellat a, vel doloribus pariatur, quas quia sunt, commodi consectetur obcaecati nam earum.
         </p>
-        <button><a href="./pages/perfumes.html">PERFUMES</a></button>
+        <a style="color: black" class="btn btn-warning btn-x1 text-uppercase" href="./pages/perfumes.html">PERFUMES</a>
+        
         <br>
         <h2>
             Velas:
@@ -51,7 +75,7 @@
         <p style="color: white;">
             text Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis officiis quisquam vel incidunt, laborum impedit earum. Eos repellat a, vel doloribus pariatur, quas quia sunt, commodi consectetur obcaecati nam earum.
         </p>
-        <button><a href="./pages/velas.html">VELAS</a></button>
+        <a style="color: black" class="btn btn-warning btn-x1 text-uppercase" href="./pages/velas.html">VELAS</a>
     </main>
 
     <footer class="footer">
