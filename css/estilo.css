@@ -1,286 +1,210 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
-@font-face {
-    font-family: "Raleway-Regular";
-    src: url("../fonts/raleway/Raleway-Regular.ttf");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
-
-header{
-    background-color: rgb(10, 10, 10);
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    
-    
-}
-.navbar-toggler-icon{
-    color: white;
-    border: rgb(92, 86, 8) solid 2px;
-}
-.text_blanco{
-    color: white;
-}
-.text_blanco:hover{
-    color: yellow;
-}
-.fondo_negro{
-    background-color: black;
-}
-nav{
-    background-color: black;
-}
-body{
-    background-color: #3f3c3c;
-    font-family: Arial, Helvetica, sans-serif;
-}
-footer{
-    padding: 20px;
-    background-color: rgb(10, 10, 10);
-    grid-area: footer;
-    color: white;
-}
-h1{
-    text-align: center;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-}
-h2{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-}
-.amarillo{
-    color: rgb(163, 163, 17);
-}
-.parrafo1{
-    padding: 10px;
-    line-height: 2;
-    
-}
-.titularColor{
-    color: green;
+body {
+  background-color: #3f3c3c;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-ul{
-    padding: 20px;
-    list-style-type: none;
-}
-.lista_header{
-    padding: 10px;
-    border: rgb(255, 255, 255) solid 2px;
-    margin: 5px;
-    display: inline-block;
-    
-    
-}
-.lista_main{
-    padding: 10px;
-    border: rgb(255, 255, 255) solid 2px;
-    margin: 5px;
-    display: inline-block;
-    
-}
-.lista_footer{
-    padding: 10px;
-    border: rgb(255, 255, 255) solid 2px;
-    margin: 5px;
-    text-align: center;
-}
-.header_logo{
-    
-    margin-left: 5%;
-    padding: 10px;
-}
-.header_form{
-    display: inline-block;
-    
-}
-h3{
-    text-align: center;
-    color: aliceblue;
-    padding: 10px;
-}
-
-.logo{
-    max-width: 100px; 
-    height: auto;
-    border-radius: 50px;
-}
-.img_car{
-    
-    margin-left: 30%;
-    height: auto;
-    width: 40%;
-    object-fit: cover;
-    border-radius: 20px;
-    padding: 10px;
-    
-}
-.img_car_vela{
-    margin-left: 35%;
-    height: auto;
-    width: 30%;
-    object-fit: cover;
-    border-radius: 20px;
-    padding: 10px;
-}
-.logo_nosotros{
-    border-radius: 30px;
-}
-.img1{
-    text-align: center;
-    
-}
-.img2{
-    text-align: center;
-    width: 700px;
-    border-radius: 20px;
-    padding: 10px;
-    
-}
-.img3{
-    text-align: center;
-    width: auto;
-    border-radius: 20px;
-    padding: 10px;
-    opacity: 1;
-}
-.img3:hover{
-    border: white solid;
-    
-}
-.center{
-    text-align: center;
-}
-.borderedondeado{
-    border-radius: 50%;
-    border: solid black 3px;
-}
-main{
-    grid-area: main;
-    text-align: center;
-}
 .container {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .container img {
-    width: 100%;          
-    height: auto;         
-    object-fit: cover;    
-    border-radius: 8px;   
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
 }
-nav{
-    width: 100%;
+
+header {
+  background-color: rgb(10, 10, 10);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li {
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.text_blanco {
+  color: white;
+}
+
+.text_blanco:hover {
+  color: yellow;
+}
+
+main {
+  text-align: center;
+}
+main .lista_main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  color: aliceblue;
+  padding: 10px;
+}
+
+.img3 {
+  text-align: center;
+  width: auto;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: 1;
+}
+.img3:hover {
+  border: white solid 2px;
+}
+
+ul {
+  padding: 20px;
+  list-style-type: none;
+}
+
+main .container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.logo_nosotros {
+  border-radius: 30px;
+}
+
+.img2 {
+  width: 700px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.img_car {
+  margin: 0 auto;
+  height: auto;
+  width: 40%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.img_car_vela {
+  margin-left: 35%;
+  height: auto;
+  width: 30%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer ul li {
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid white;
+  list-style-type: none;
+}
+
+footer .lista_footer {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+footer .lista_footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .lista_footer a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 748px) {
-    .container {
-        grid-template-columns: 1fr 1fr; 
-    }
-    .container img {
-        max-width: 100%; 
-        height: auto;
-        
-    }
-    nav ul {
-        display: flex; 
-        justify-content: center; 
-        padding: 0; 
-        list-style: none; 
-        gap: 15px; 
-    }
-    header{
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        padding: 10px;
-    }
-    .logo-container {
-        display: flex;
-        justify-content: center; 
-        width: 100%; 
-    }
-    .logo{
-        max-width: 100px;
-        width: auto; 
-    }
-    .img2{
-        height: auto;
-        width: 100%;
-    }
-    .header_logo{
-        margin-left: 25%;
-    }
-
+  main .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container img {
+    max-width: 100%;
+    height: auto;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img2 {
+    height: auto;
+    width: 100%;
+  }
 }
-
-
 @media screen and (max-width: 480px) {
-    .container {
-        grid-template-columns: 1fr; 
-    }
-    .container img {
-        max-width: 90%; 
-        height: auto;
-    }
-    nav ul {
-        display: flex; 
-        justify-content: center; 
-        padding: 0; 
-        list-style: none; 
-        gap: 15px; 
-    }
-    header{
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        padding: 10px;
-    }
-    .logo{
-        max-width: 100px;
-        width: auto; 
-    }
-    .img2{
-        height: auto;
-        width: 100%;
-    }
-    
-    .lista_header{
-        display: list-item;
-        
-    }
-    .header_logo{
-        margin-left: 0%;
-    }
-    
-    .img_car{
-    
-        margin-left: 0%;
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-        padding: 10px;
-        
-    }
-    .img_car_vela{
-        margin-left: 0%;
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-        padding: 10px;
-    }
+  main .container {
+    grid-template-columns: 1fr;
+  }
+  .container img {
+    max-width: 90%;
+    height: auto;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .img_car {
+    width: 100%;
+  }
+  .img2 {
+    height: auto;
+    width: 100%;
+  }
 }
 
+/*# sourceMappingURL=estilo.css.map */
