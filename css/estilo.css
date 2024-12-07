@@ -63,23 +63,21 @@ main {
   text-align: center;
 }
 main .lista_main {
-  display: flex;
+  display: block;
+  width: 100%;
   background-color: #3f3c3c;
   border-radius: 20px;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
   padding: 10px;
-  width: 30%;
   text-align: center;
+  transition: transform 1.3s;
 }
 main .lista_main:hover {
   transform: scale(1.05, 1.05);
   transition: all 1.3s;
 }
 main .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-items: center;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -180,8 +178,8 @@ footer .lista_footer a :hover {
     max-width: 100%;
     height: auto;
   }
-  .modal-dialog-centered {
-    width: 75%;
+  .modal-content .modal-body {
+    font-size: 1rem;
   }
   header .container {
     flex-direction: column;
@@ -200,8 +198,8 @@ footer .lista_footer a :hover {
     max-width: 90%;
     height: auto;
   }
-  .modal-dialog-centered {
-    width: 50%;
+  .modal-content .modal-body {
+    font-size: 0.9rem;
   }
   header .container {
     flex-direction: column;
