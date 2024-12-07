@@ -9,6 +9,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.blanco {
+  color: white;
+}
+
 .container {
   display: grid;
   grid-template-rows: 1fr;
@@ -66,13 +70,16 @@ main .lista_main {
   gap: 2rem;
   justify-content: center;
   padding: 10px;
+  width: 30%;
+  text-align: center;
 }
 main .lista_main:hover {
   transform: scale(1.05, 1.05);
   transition: all 1.3s;
 }
 main .container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -102,8 +109,13 @@ ul {
   list-style-type: none;
 }
 
+p {
+  padding: 20px;
+}
+
 .logo_nosotros {
   border-radius: 30px;
+  width: 300px;
 }
 
 .img2 {
@@ -168,6 +180,9 @@ footer .lista_footer a :hover {
     max-width: 100%;
     height: auto;
   }
+  .modal-dialog-centered {
+    width: 75%;
+  }
   header .container {
     flex-direction: column;
     align-items: center;
@@ -184,6 +199,9 @@ footer .lista_footer a :hover {
   main .container img {
     max-width: 90%;
     height: auto;
+  }
+  .modal-dialog-centered {
+    width: 50%;
   }
   header .container {
     flex-direction: column;
