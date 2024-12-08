@@ -31,19 +31,27 @@
               </nav>
         </header>
     
-    <main>
-        <h1 class="display-4 text-white text-center fw-bold bg-dark shadow p-3 mb-5 rounded">
-            Contacto
-        </h1>
-        <div>
-            <ul>
-                <h3><li class="">Gmail: perfumaromas@gmail.com</li></h3>
-                <h3><li class="">WhatsApp: 011-123456</li></h3>
-            </ul>
-        </div>
-        
-    </main>
-
+        <h1 class="display-4 text-white text-center fw-bold bg-dark shadow p-3 mb-5 rounded">Contáctanos</h1>
+        <main class="container py-5 d-flex justify-content-center align-items-center">
+            <section class="contact-form">
+                <h2 class="titulo-contacto">ENVIANOS TU MENSAJE</h1>
+              <form action="https://example.com/enviar-formulario" method="POST">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label blanco letra-mediana">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label blanco letra-mediana">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label blanco letra-mediana">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Enviar</button>
+              </form>
+            </section>
+        </main>
     <footer>
         
         <h2 class="center">

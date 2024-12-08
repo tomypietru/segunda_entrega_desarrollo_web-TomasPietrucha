@@ -54,12 +54,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    
-    
-    
   }
+  .navbar-toggler {
+    border-color: $color-yellow; // Cambia el borde del botón hamburguesa
+    background-color: transparent;
+  
+    &:hover {
+      background-color: $color-black; // Fondo al pasar el mouse
+    }  
+    
+  }  
   nav{
-
+    
     ul {
       display: flex;
       list-style: none;
@@ -112,15 +118,43 @@ main {
   }
 }
 
+.container{
+  .py-5{
+    text-align: center;
+  }
+} 
 
+h1 {
+  font-size: 2.5rem;
+  color: $color-text;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
+p {
+  padding: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.letra-mediana{
+  font-size: 1.5rem;
+}
 
 h2{
     color: $color-text;
     padding: 20px;
 }
 
-
+.titulo-contacto{
+  padding: 50px;
+  font-size: 2rem;
+}
 
 h3{
     text-align: center;
@@ -146,17 +180,16 @@ ul{
     list-style-type: none;
 }
 
-p{
-  padding: 20px;
-}
+
 
 
 
 .logo_nosotros{
-    border-radius: 30px;
-    width: 300px
-    
-    
+    border-radius: 150px;
+    width: 300px    
+}
+.fs{
+  font-size: 1.3rem;
 }
 
 .img2 {
@@ -231,15 +264,27 @@ footer {
       }
     }  
 
+    .fs{
+      font-size: 1.1rem;
+    }
+
     header{
       .container {
         flex-direction: column;
         align-items: center;
       }
+    }
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 85%;
     } 
     .img2{
       height: auto;
-      width: 100%;
+      width: 90%;
       }
 }
 
@@ -271,6 +316,15 @@ footer {
   .img_car {
     width: 100%;
   }
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
   .img2{
     height: auto;
     width: 100%;
